@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        android:background="#5000ca"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/wave_top"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/rl_header"
+        android:src="@drawable/ic_wave__1_"
+        android:scaleType="fitXY"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/wave_button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_wave"
+        android:scaleType="fitXY">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/wave_top"
+        android:layout_above="@+id/wave_button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        />
+
+
+</RelativeLayout>
